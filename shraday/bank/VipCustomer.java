@@ -1,9 +1,9 @@
 package javaExperiments.shraday.bank;
 
 public class VipCustomer {
-    String name;
-    float creditLimit;
-    String email;
+    private String name;
+    private float creditLimit;
+    private String email;
 
     public VipCustomer() {
         this("", 0, "");
@@ -15,7 +15,7 @@ public class VipCustomer {
     public VipCustomer(String name, float creditLimit){
         this(name, creditLimit, "");
     }
-    
+
     public VipCustomer(String name, float creditLimit, String email){
         this.name = name;
         this.creditLimit = creditLimit;
