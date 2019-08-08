@@ -7,35 +7,44 @@ public class Main{
             private int cylinders;
             private int wheels;
             private boolean engine;
+
             public Car(String name, int cylinders) {
                 this.name = name;
                 this.cylinders = cylinders;
                 this.wheels = 4;
                 this.engine = true;
             }
+
             public String getName() {
                 return name;
             }
+
             public int getCylinders() {
                 return cylinders;
             }
+
             public int getWheels() {
                 return wheels;
             }
+
             public boolean isEngine() {
                 return engine;
             }
+
             public void startEngine(){
-                System.out.println(this.name.concat(" ").concat("has its engine started"));
+                System.out.println(name + " has its engine started");
             }
+
             public void accelerate(){
-                System.out.println(this.name.concat(" ").concat("is accelerating"));
+                System.out.println(name + " is accelerating");
             }
+
             public void brake(){
                 System.out.println("The car is stopping");
             }
 
         }
+
         class BMW extends Car{
 
             public BMW(String name, int cylinders) {
@@ -45,20 +54,21 @@ public class Main{
 
             @Override
             public void startEngine() {
-                System.out.println(this.name.concat(" ").concat("has its engine started"));
+                System.out.println(name + " has its engine started");
             }
 
             @Override
             public void accelerate() {
-                System.out.println(this.name.concat(" ").concat("is accelerating"));
+                System.out.println(name + "is accelerating"));
 
             }
 
             @Override
             public void brake() {
-                System.out.println(this.name.concat(" ").concat("is stopping"));
+                System.out.println(name + "is stopping");
             }
         }
+
         class Mercedes extends Car{
             public Mercedes(String name, int cylinders) {
                 super(name, cylinders);
@@ -67,17 +77,17 @@ public class Main{
 
             @Override
             public void startEngine() {
-                System.out.println(this.name.concat(" ").concat("has its engine started"));
+                System.out.println(name + " has its engine started");
             }
 
             @Override
             public void accelerate() {
-                System.out.println(this.name.concat(" ").concat("is accelerating"));
+                System.out.println(name + "is accelerating");
             }
 
             @Override
             public void brake() {
-                System.out.println(this.name.concat(" ").concat("is stopping"));
+                System.out.println(name + "is stopping");
             }
         }
 
@@ -89,28 +99,29 @@ public class Main{
 
             @Override
             public void startEngine() {
-                String name="dinank";
+                String name = "V8";
                 System.out.println(name.equalsIgnoreCase("DINANK"));
 
              }
 
             @Override
             public void accelerate() {
-                System.out.println(this.name.concat(" ").concat("is accelerating"));
+                System.out.println(this.name + "is accelerating");
             }
 
             @Override
             public void brake() {
-                System.out.println(this.name.concat(" ").concat("is stopping"));
+                System.out.println(this.name + "is stopping");
             } 
         }
-        Car car=new Car("Engine",4);
+
+        Car car = new Car("Engine",4);
         car.startEngine();
-        Ferrari ferrari=new Ferrari("Engines",5);
+        Ferrari ferrari = new Ferrari("Engines",5);
         ferrari.startEngine();
-        BMW bmw=new BMW("Eng",5);
+        BMW bmw = new BMW("Eng",5);
         bmw.startEngine();
-        Mercedes mercedes=new Mercedes("Engineer",6);
+        Mercedes mercedes = new Mercedes("Engineer",6);
         mercedes.startEngine();
     }
 

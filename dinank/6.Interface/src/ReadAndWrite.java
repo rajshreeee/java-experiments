@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class ReadAndWrite implements Isaving {
@@ -13,27 +12,30 @@ public class ReadAndWrite implements Isaving {
         return valued;
     }
 
-    @Override
-    public String toString() {
-        return "" +valued;
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "ReadAndWrite{" +
+                "valued=" + valued +
+                '}';
     }
 
     @Override
     public ArrayList<String>canWriteTo(String values) {
        valued++;
         value.add(values);
-        value.add(toString());
+        String insert = toString();
+        value.add(insert);
         return value;
     }
 
     @Override
     public void canReadFrom(ArrayList<String> values) {
-        for(int i=0; i<values.size();i++){
-            if(i%2==0){
-                System.out.println("Name:"+" ".concat(values.get(i)));
+        for(int i=0; i < values.size(); i++){
+            if(i % 2 == 0){
+                System.out.println("Name: ".concat(values.get(i)));
             }
-            else if(i%2==1){
-                System.out.println("Value:"+" ".concat(values.get(i)));
+            else if(i % 2 == 1){
+                System.out.println("Value: ".concat(values.get(i)));
             }
         }
     }

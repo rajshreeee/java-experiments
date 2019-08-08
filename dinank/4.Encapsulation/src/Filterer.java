@@ -8,15 +8,14 @@ public class Filterer {
         this.duplex = duplex;
     }
     public int pagesPrinted(){
-        if(this.duplex && this.pagesToPrint%2==0){
-           int pages=this.pagesToPrint/2;
+        if(this.duplex && this.pagesToPrint % 2 == 0){
+           int pages = this.pagesToPrint / 2;
            return pages;
         }
-        else if(this.duplex && this.pagesToPrint%2==1){
-            int pages=this.pagesToPrint/2+1;
+        else if(this.duplex && this.pagesToPrint % 2 == 1){
+            int pages = this.pagesToPrint / 2 + 1;
             return pages;
         }
         return pagesToPrint;
-
     }
 }

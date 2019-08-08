@@ -24,6 +24,6 @@ public class Sofa {
     }
 
     public void numberofCushions(String cushions) {
-        System.out.println("There are "+this.number+"sofas");
+        System.out.println("There are " + this.number + "sofas");
     }
 }

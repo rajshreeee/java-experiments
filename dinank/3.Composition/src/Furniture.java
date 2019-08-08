@@ -4,9 +4,9 @@ public class Furniture {
     private Manufacturer manufacturer;
 
     public Furniture(String type,int size,Manufacturer manufacturer){
-        this.type=type;
-        this.size=size;
-        this.manufacturer=manufacturer;
+        this.type = type;
+        this.size = size;
+        this.manufacturer = manufacturer;
     }
 
     public String getType() {

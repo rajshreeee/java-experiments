@@ -2,48 +2,57 @@ public class BankAccounts {
     private String accountNumber;
     private double accountBalance;
     private String customerName;
-    private String customerEMailAddress;
+    private String customerEmailAddress;
     private String phoneNumber;
 
     public String getAccountNumber(){
         return this.accountNumber;
     }
+
     public void setAccountNumber(String accountNumber){
-        this.accountNumber=accountNumber;
+        this.accountNumber = accountNumber;
     }
+
     public double getAccountBalance(){
-        return this.accountBalance;
+        return accountBalance;
     }
+
     public void setAccountBalance(double accountBalance){
-        this.accountBalance=accountBalance;
+        this.accountBalance = accountBalance;
     }
+
     public String getCustomerName(){
-        return this.customerName;
+        return customerName;
     }
+
     public void setCustomerName(String customerName){
-        this.customerName=customerName;
+        this.customerName = customerName;
     }
-    public String getCustomerEMailAddress(){
-        return this.customerEMailAddress;
+   public String getCustomerEmailAddress(){
+        return customerEmailAddress;
     }
-    public void setCustomerEMailAddress(String customerEMailAddress){
-        this.customerEMailAddress=customerEMailAddress;
+
+    public void setCustomerEmailAddress(String customerEmailAddress){
+        this.customerEmailAddres = customerEmalAddress;
     }
+
     public String getPhoneNumber(){
-        return this.phoneNumber;
+        return phoneNumber;
     }
+
     public void setPhoneNumber(String phoneNumber){
-        this.phoneNumber=phoneNumber;
+        this.phoneNumber = phoneNumber;
     }
+
     public void depositFunds(double balance){
-        this.accountBalance+= balance;
-        System.out.println(balance+"deposited into account number: "+this.accountNumber);
+        this.accountBalance += balance;
+        System.out.println(balance + ntd into account number: " + this.accountNumber);
     }
+
     public void withdrawFunds(double balance){
-        if ((this.accountBalance-balance)<0){
-            this.accountBalance-=balance;
-            System.out.println(balance+"has been withdrawn from account number: "+this.accountNumber);
+        if (this.accountBalance - balance < 0){
+            this.accountBalance -= balance;
+            System.out.println( balance + "has been withdrawn from account number: " + this.accountNumber);
         }
     }
 }
-

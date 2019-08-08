@@ -11,7 +11,7 @@ public class Room {
         return furniture;
     }
 
-    public void getSofa() {
+    public void printSofa() {
         System.out.println(sofa.getCushions());
     }
 }
