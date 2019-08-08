@@ -15,7 +15,7 @@ public class VipCustomer {
     public VipCustomer(String name, float creditLimit){
         this(name, creditLimit, "");
     }
-
+    
     public VipCustomer(String name, float creditLimit, String email){
         this.name = name;
         this.creditLimit = creditLimit;
