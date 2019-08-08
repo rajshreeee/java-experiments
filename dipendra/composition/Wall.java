@@ -1,6 +1,6 @@
 package composition;
 
-import java.awt.*;
+import java.awt.Dimension;
 
 public class Wall {
     private String color;
